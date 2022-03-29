@@ -108,18 +108,7 @@ Variables ASSIGNMENT:
  7. Print values to the console "My name is whatever and I am 23 years old”. Here, declare name and age
     in a variable and use concatenation to print to console
 
- 
-    /*Reminder#1:
- Now if we declare that a dog has black color, now, dont go and google
- why black, why not yeallow? You are now in development world, your mind is being 
- reporgrammed. You are not QA to ask buncho questions and have negative test cases here
- You are a dev and you are block scoped, and you are a constant.
- Focus on what is here: we have a statement, it is all about statements and in this case
- dog is black - dont try to change it or question it and you will learn fast
- and you will learn what is necessary for you to become JS programmer.
- In 6 months, you can have a yellow dog, gray dog, cat, bird...but now - focus your
- intention on what is here and what is here only - block scoped, and constant.
- */
+
  
  /////////////////////////////////////////////
- 
+ */

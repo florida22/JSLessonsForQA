@@ -18,8 +18,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Oper
 <Left operand> operator <right operand>
 */
 ////////// Arithmetic Operators/////////
-
-
+// let x = 5, y = 10;
+// let z = x % 2;
+// console.log(z);
 
 /*If either value is a string, the addition operator uses the following rules:
 If both values are strings, it concatenates the second string to the first one.
@@ -29,6 +30,10 @@ For example, the following uses the addition operator to add concatenate
 two strings.
 */
 
+// let x = 10,
+//     y = '20'
+// let result = x * y;
+// console.log(result);
 
 /* Subtraction operator!!! (-)
 If a value is a string, a boolean, null, or undefined, the JavaScript engine will:
@@ -65,8 +70,14 @@ Using it as a prefix returns the value after incrementing.
 This numerical operation increases or decreases a variable by 1. It’s important to remember that
 this can only be applied to variables, and applying this operation to numerical values will return an error.
 */
-// prefix
+// let counter = 2;
+// counter--; // 
+// alert(counter); 
 
+// let i = 0;
+// i--;
+// --i;
+// alert(i)
 
 //////////// String Concatenation////////////////////////////
 // The + operator performs concatenation operation when one of 
@@ -75,7 +86,16 @@ this can only be applied to variables, and applying this operation to numerical 
 
 ///////////////// Comparison Operators///////////////////////////////
 //  compare two operands and return a boolean value true or false
-
+// let a = 5, b = 10, c = '5', x = a;
+// a === c; // false
+// console.log(a === c);
+// a == x; 
+// a != b;
+// a > b;
+// a >= b;
+// a <= b;
+// console.log((a == c), (a === c), (a == x), (a != b), (a > b), 
+// (a < b), (a >= b), (a <= b));
 
 
 //////////////// Logical Operators////////////////////////
@@ -92,10 +112,24 @@ this can only be applied to variables, and applying this operation to numerical 
  "!"" is known as NOT operator. It reverses the boolean result of the operand 
  (or condition). !false returns true, and !true returns false.
  */
+// let a = 5, b = 10;
+
+// (a != b) && (a < b);
+// console.log((a != b) && (a < b));
+
+// (a > b) || (a == b); // 
+// console.log((a > b) || (a == b));
+
+// !(a > b);
+// console.log(!(a > b));
+
+
 
 //////////////////// Assignment Operators/////////////////////////////
 // assign values to variables with less key strokes.
 
+// let x = 5, y = 10,  z = 15;
+// x *= 5; // x = x * 5
 
 //////////////////// Conditional Operators or Ternary Operator//////////////
 
@@ -108,16 +142,35 @@ This operator is frequently used as an alternative to an if...else statement.
 <condition> ? <value1> : <value2>;
 condition ? expressionIfTrue : expressionIfFalse
 */
+const age = 25;
+age >= 18 ? console.log("If block, I drive a car") : 
+console.log("Else block. I drive bike");
+
+age >= 18 ? 'car' : 'bike';
+
+const age1 = 11;
+const drink = age1 >= 18 ? 'votka' : 'lemonade';
+console.log(drink)
+
+
+let drink2;
+let age2 = 21;
+if (age2 >= 18) {
+    drink2 = 'vodka';    
+} else {
+    drink2 = 'lemonade'   
+}
+console.log(drink);
+
+console.log(`I like ${age >= 18 ? 'car' : 'bike'}`);
+console.log(`I do not like ${drink}`);
+
 
 
 // operator always produces a value, operator is an expression. If we have a value
 // we can assign that value to a variable, so we can use ternery operator to conditionaly
 // declare variables
 
-
-// now we can store that value into a variable
-
-// in if else statement we write more code
 
 
 // Homework

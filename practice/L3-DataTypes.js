@@ -88,9 +88,6 @@ console.log(10n === 10);    // → false
 console.log(typeof 10n);    // → bigint
 console.log(typeof 10);     // → number
 
-
-
-
 // *******************************************************************88
 
 /* Let’s talk about statements and expressions. 
@@ -153,17 +150,6 @@ console.log(person.firstname);
 console.log(person.ageJohn, person.lastname, person['loves pizza']);
 
 console.log(person['firstname']);
-
-
-
-
-
-
-
-
-
-
-
 
 
  /*
