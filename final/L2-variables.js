@@ -25,7 +25,7 @@ As of ES6, to declate a variable, We use: let(can be reassigned, is mutable) and
  let fifthScore = 1111,
      sixthScore = 3333,
      lastScore = 7777;
- // console.log(fifthScore,sixthScore, lastScore);
+/// console.log(fifthScore,sixthScore, lastScore);
 
  // If you use a variable without initializing it, it will have an undefined value.
  let cars;
@@ -52,9 +52,9 @@ As of ES6, to declate a variable, We use: let(can be reassigned, is mutable) and
 // Print Values Stored in Variables
 // storing values
   const greet = 'Hello';
-  const name = 'Jack';
+  const name1 = 'Jack';
 
-  console.log(greet + ' ' + name); // Hello Jack
+  console.log(greet + ' ' + name1); // Hello Jack
 
 
  /* Difference between let and var:

@@ -11,10 +11,7 @@ var five = 5; // and using "five" in some math, just use the number 5 literally.
 
 // So in an OOP language an object literal would be something like:
 
-let new_dog = {
-    name: "doggy",
-    good_dog: false
-};
+
 /*The entire thing is my object. Things between my {} are my literals. 
 My notation is a pattern "name:value".
 The string interpolation in JavaScript is performed by template literals 
@@ -22,32 +19,17 @@ The string interpolation in JavaScript is performed by template literals
 Template Literals use back-ticks (``) rather than the quotes ("") to define a string:
 */
 
-let day = `Morning.`;
+
 
 // Quotes Inside Strings - With template literals, you can use both single and double
 // quotes inside a string or we can use multiple string:
 
-let night = `We can see "Orion Belt"`;
-console.log(day, night);
+
 
 // String Interpolation (insert something of a different nature into something else)😹 .
 // easy way to interpolate variables and expressions into strings.
 // replacement of variables with real values The syntax is: ${...}
-let something = "water";
-let somethingElse = "bucket";
-let syntax = "syntax ${...}";
-let backTicks = "``"
 
-let say = `We use backticks (${backTicks}) to insert ${something} into ${somethingElse}
- with this ${syntax}!.`
-
-console.log(say);
-
-let price = 10;
-let tax = 0.25;
-
-let total = `Total: ${(price * (1 + tax)).toFixed(2)}`;
-console.log(total)
 
 // HTML Templates
 //Template literals provide an easy way to interpolate variables and 
