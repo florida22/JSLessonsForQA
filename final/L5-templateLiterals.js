@@ -7,7 +7,7 @@ Also, literal as opposed to non-literal?
 
 Well, in programming in general a literal is a fixed value.
 Like saying: */ 
-var five = 5; // and using "five" in some math, just use the number 5 literally.
+let five = 5; // and using "five" in some math, just use the number 5 literally.
 
 // So in an OOP language an object literal would be something like:
 
@@ -54,7 +54,7 @@ console.log(total)
 //expressions into strings.The method is called string interpolation.
 
 
-{/* <h2>JavaScript Template Literals</h2>
+/*{ <h2>JavaScript Template Literals</h2>
 
 <p>Template literals allows variables in strings:</p>
 
@@ -74,13 +74,27 @@ for (const x of tags) {
 
 html += `</ul>`;
 document.getElementById("demo").innerHTML = html;
-</script> */}
+</script> } */
+
+let p = {
+  name: 'Jackson',
+  nn: 'Jack',
+};
+// STRING CONCATENATION
+console.log('Hi, I\'m ' + p.name + '! Call me "' + p.nn + '".');
+// TEMPLATE LITERALS
+console.log(`Hi, I'm ${p.name}! Call me "${p.nn}".`);
+// "Hi, I'm Jackson! Call me 'Jack'."
 
 
+// STRING CONCATENATION
+console.log('Three plus six is ' + (3 + 6) + '.');
+// TEMPLATE LITERALS
+console.log(`Three plus six is ${3 + 6}.`);
+// "Three plus six is 9."
 
 
-
-
+/* Homework: practice in few examples
 
 
 

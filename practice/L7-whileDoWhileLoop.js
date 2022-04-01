@@ -15,9 +15,9 @@ pretest loop. There is another "For loop" which is posttest loop.
 
 If the expression evaluates to false before the loop enters, the "while loop will never" execute.
 And "while" and "do...while loops" are usually used when the number of iterations are unknown.
-"For loop" is used when numberof iteration is known. 
+"For loop" is used when number of iteration is known. 
 
-How the script works in "while statment"?
+How the script works in "while statement"?
 */
 /*
 let count = 1;             // declare and initialize the count variable to 1
@@ -50,7 +50,7 @@ console.log(`The sum is ${sum}.`);
 */
 /*Here, parseInt() is used because prompt() takes input from the user as a string.
  And when numeric strings are added, it behaves as a string. For example,
- '2' + '3' = '23'. So parseInt() converts a numeric string to number. 
+ '2' + '3' = '23'. So parseInt() converts a numeric string to number and result is 5. 
  console.log(parseInt('2FE')) // 2
  console.log(parseInt('31xyz'))  // 31
  */

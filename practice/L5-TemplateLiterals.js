@@ -5,12 +5,19 @@ Literal = original, precise, exact, in JS it is a notation for representing a fi
 in our code. What does that mean?
 Also, literal as opposed to non-literal?
 
-Well, in programming in general a literal is a fixed value.
+JavaScript Literals are constant values that can be assigned to the variables that are 
+called literals or constants. JavaScript Literals are syntactic
+representations for different types of data like numeric, string, Boolean, array, etc data.
 Like saying: */ 
-var five = 5; // and using "five" in some math, just use the number 5 literally.
+const five = '5'; // string literal is enclosed in quotes
+let six = "six";
 
-// So in an OOP language an object literal would be something like:
-
+// An object literal is a list of zero or more pairs of property names and associated
+// values of an object, enclosed in curly braces ({}):
+let new_dog = {
+  name: "Wolfy",
+  good_dog: false
+}
 
 /*The entire thing is my object. Things between my {} are my literals. 
 My notation is a pattern "name:value".
@@ -18,17 +25,25 @@ The string interpolation in JavaScript is performed by template literals
 (strings wrapped in backticks ``) and ${expression} as a placeholder.
 Template Literals use back-ticks (``) rather than the quotes ("") to define a string:
 */
-
-
+let day = `Monday`;
 
 // Quotes Inside Strings - With template literals, you can use both single and double
 // quotes inside a string or we can use multiple string:
-
+let night = `We can see "Orion Belt"`;
+console.log(day, night);
 
 
 // String Interpolation (insert something of a different nature into something else)😹 .
 // easy way to interpolate variables and expressions into strings.
 // replacement of variables with real values The syntax is: ${...}
+let something = "water";
+let somehtingElse = "bucket";
+let syntax = "syntax ${...}";
+let backTicks = "``"
+
+let say = `We use backticks (${backTicks}) to insert ${something} into ${somehtingElse}
+with (${syntax})`;
+console.log(say);
 
 
 // HTML Templates
@@ -58,19 +73,22 @@ html += `</ul>`;
 document.getElementById("demo").innerHTML = html;
 </script> */}
 
+// STRING CONCATENATION
+let p = {
+  name: "jojo",
+  nn:"jo"
+}
 
+console.log('Hi, I\'m ' + p.name + '! Call me "' + p.nn + '".');
+// TEMPLATE LITERALS
+console.log(`Hi, I'm ${p.name}! Call me "${p.nn}".`);
+// "Hi, I'm Jackson! Call me 'Jack'."
 
-
-
-
-
-
-
-
-
-
-
-
+// STRING CONCATENATION
+console.log('Three plus six is ' + (3 + 6) + '.');
+// TEMPLATE LITERALS
+console.log(`Three plus six is ${3 + 6}.`);
+// "Three plus six is 9."
 
 
 
