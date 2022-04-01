@@ -215,5 +215,6 @@ if ("0") {
 } 
 
 3. Rewrite 1. with switch statement.
+4. https://tfs.corptax.com/tfs/corptaxcollection/Tbs.CorpTax/_git/corptax?path=%2Fsrc%2FUI%2FComponents%2Freact-components%2Fsrc%2Freducers%2FbreadcrumbsReducer.ts
 
 */
