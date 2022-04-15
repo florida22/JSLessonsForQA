@@ -1,26 +1,42 @@
-/*Type Conversion - is when we manually convert form one type to another
+// Type Conversion - is when we manually, explicitly convert form one type to another
+// string to Number 
+// Type Coercion performed automatically by JS or implicitely
 
-*/
-const inputYear = '1991';
-console.log(inputYear + 18); // 199118, it will concatonate
+// const inputYear = "1991";
+// console.log(Number (inputYear) + 18);
 
-// so we use built-in Number() function to convert
+// console.log(Number ("Jack"));
 
-const myBirthYear = "1988";
-console.log(Number(myBirthYear) + 18);
+// // Coercion
+// console.log("I am " + "23" + " years old");
 
-console.log(Number('Jack')); // NaN actually it it invalid Number
-console.log(typeof NaN); // number
+// // Conversion
+// String(23); "23"
+// String(true); "true"
 
-console.log(String(2), 2);
+// // number.toString()
+// let x = 195;
+// let text = x.toString(8);
+// console.log(text); // 1111
 
-// Type Coercion performed automatically or implicitly by the JavaScript engine
-// whenever an operator is dealing with 2 values that have diff Type
+// // parseInt(value)
+// let string = "321";
+// console.log(string);
 
-console.log( 'I am ' + 23 + ' years old'); // produces a string, 23 is coerced to string
-console.log( 'I am ' + '24' + ' years old');
-console.log( `I am 23 years old`); // sam in template
+// let numX = parseInt(string);
+// console.log(numX);
 
-// but subtraction does th eopposite converst string to number
-console.log('23' - '10' - 3); // 10, same with 
-console.log('23' * '10' - 3);
+// while loop
+
+let sum = 0;// 
+// take input from user
+let number = parseInt(prompt('Enter a number: '));
+while(number > 0) {
+    // add all negative numbers
+    sum += number;
+
+    // take input again if numbe ris negative
+    number = parseInt(prompt("Enter an number: "))
+}
+// display the sum
+console.log(`The sum is ${sum}.`);
