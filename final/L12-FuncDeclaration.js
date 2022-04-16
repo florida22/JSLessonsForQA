@@ -1,4 +1,5 @@
 /*Function - piece of code we can reuse over and over, fundamental building block in JS
+
 */
 function logger() {
     // function body code to be executed
@@ -66,4 +67,25 @@ function fruit(apple) {
 //const totalApples = fruit(3);
 console.log(totalApples);
 
-// this is hoisting
+// this above is hoisting
+
+// IIFE...Immediately Invoked Function Expressions
+(function() {
+    alert(`I've run - but can't be run again because I'm immediately invoked at runtime,
+           leaving behind only the result I generate`);
+ }());
+ 
+ (function() {
+    alert("This is IIFE too.");
+ })();
+ 
+ (function(message) {
+    alert(message);
+ }("Hello World!"));
+
+ let example = (function() {
+    return 42;
+ }());
+ console.log(example); // => 42
+
+ (() => console.log("Hello!"))(); // => Hello!

@@ -5,7 +5,7 @@ you will master functions, and I will help you learn how to write functions, cal
 execute them. 
 Functions are subprograms that are written once, and they may be invoked or executed many times.
 Here is one function that I want you to test out in your browser console:
-document.write(‘Welcome’);
+document.write("Welcome");
 This is a function which purpose is to simply generate output. Most of the functions provide
 and return a value.
 Did you see that the text "Welcome" is written on your browser? The document.write() 
@@ -245,3 +245,28 @@ function multiplyFn(5, b = 1)
 This is how we provide the default function parameter, and please note we can also do this for 
 the first parameter.
 */
+// func expression - func is just a value, it is not a type like a string or a number
+// if it is a value we can store it into a variable
+
+
+let greeting3 = function(name,lastName){ 
+    return `Nice to see you again ${name} ${lastName}`; 
+   } 
+   //invoke function expression 
+   let theMessage4 = greeting('Luke', "Perry"); 
+   console.log(theMessage4); 
+
+   let theMessage5 = greeting('Sam', "Perry"); 
+   console.log(theMessage5); 
+
+   let theMessage6 = greeting('jane', "Perry"); 
+   console.log(theMessage6); 
+
+
+// the diff between func decl and func expression
+const change = money(500);
+function money(pockeChange) {
+    return 1000 - pockeChange;  
+}
+//const change = money(500);
+console.log(change);

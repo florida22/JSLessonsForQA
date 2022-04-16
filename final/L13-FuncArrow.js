@@ -99,3 +99,24 @@ const calcAge3 = birthYear => 2037 - birthYear;
 const age3 = calcAge3(1991);
 console.log(age3);
 
+/*
+Syntax
+#
+x => y // Implicit return
+
+x => { return y } // Explicit return
+
+(x, y, z) => { ... } // Multiple arguments
+
+async () => { ... } // Async arrow functions
+
+(() => { ... })() // Immediately-invoked function expression
+
+const myFunc = x
+
+=> x*2 // A line break before the arrow will throw a 'Unexpected token' error
+
+const myFunc = x =>
+
+x*2 // A line break after the arrow is a valid syntax
+*/
